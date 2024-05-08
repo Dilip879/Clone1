@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Cabin', sans-serif;
+}
+/* body{
+    background-color: #161616;
+} */
+:root {
+    --color: #3a9948;
+    --text-color-white: #fafffa;
+}
+
+.top_bar_and_header_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Make sure it's above other elements */
+}
+.top_bar{
+    background-color: var(--color);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+.top_bar .contact  .image{
+    height: 25px ;
+    width: 25px;
+    background-color: var(--text-color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.top_bar .contact .image img{
+    height: 90%;
+    width: 90%;
+}
+.top_bar .contact div{
+    display: flex;
+    align-items: center;
+}
+.top_Content{
+    margin-right: 2%;
+    /* border: 1px solid; */
+}
+.top_Content p,a{
+    /* border: 1px solid; */
+    color: #fafffa;
+    text-decoration: none;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+.lockicon i,p{
+    display: inline;
+    padding-right: 5px;
+    color: var(--text-color-white);
+}
+.top_bar{
+    position: relative;
+}
+.top_bar_login{
+    cursor: pointer;
+}
+.dropdown_content{
+    position: absolute;
+    display: none;
+    background-color: var(--text-color-white);
+    /* top: 100%; */
+    z-index: 2;
+    
+}
+.dropdown_content a{
+    display: block;
+    padding: 10px 20px;
+}
+.lockicon:hover .dropdown_content{
+    display: block;
+}
+.dropdown_content a:hover {
+    background-color: #ddd;
+}
+.call_icon{
+    cursor: pointer;
+}
+.slider_animation{
+    width: 200px;
+    /* border: 1px solid; */
+    margin: 0 10px ;
+    white-space: nowrap;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #1bbf54;
+    border-bottom: 2px solid #1bbf54;
+    overflow: hidden;
+
+    /* animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    /* overflow: hidden ;  */
+}
+.slider{
+    color: black;
+    display: inline-block;
+    animation: slide 20s linear infinite;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(40%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ----------- Menu icon css ---------- */
+.menu_icon i{
+    font-size: 1.6em;
+    color: var(--text-color-white);
+    padding: 6px;
+}
+.menu_icon{
+    /* background-color: #3a9948; */
+    background: linear-gradient(180deg,rgba(40, 92, 48, 0.9), rgb(50, 208, 74)); background: linear-gradient();
+    border-radius: 5px;
+    margin-right: 20px;
+    display: none;
+}
+
+/* ------------- Header Bar css --------------- */
+
+.header_bar{
+    height: 65px;
+    width: 100%;
+    background-color: var(--text-color-white);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+header .logo, .whatsapp_contact {
+    height: 50px;
+    margin: .5rem;
+}
+
+header .logo img {
+ width: 120px;
+}
+nav ul li a{
+    color: black;
+    /* padding: 0 .5em; */
+    /* border: 1px solid; */
+    margin: 0 .5em;
+}
+nav ul li{
+    display: inline;
+}
+.nav_bar ul li a{
+    position: relative;
+}
+.nav_bar ul li a::after{
+    /* content: '';
+    background-color: #f44336;
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    display: block;
+    transition: 0.5s; */
+    content: '';
+    position: absolute;
+    background-color: #1bbf54;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    left: 0;
+    bottom: -4px;
+}
+.nav_bar ul li a:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+
+.btn_and_whatsapp{
+    display: flex;
+    align-items: center;
+}
+.contact_btn li{
+    list-style: none;
+}
+.whatsapp_contact img{
+    /* width: 40%; */
+    width: 35px;
+    height: 35px;
+    margin: .4em;
+}
+.btn_green{
+    background: linear-gradient(67deg, rgba(53,137,65,0.9), rgba(76,197,94,1));
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 50px;
+}
+
+
+/* --------------- Hero Section css --------------- */
+
+
+.hero_section{
+    margin-top: 105px;
+    padding: 0 5%;
+}
+
+/* ------------------ button hover change order css ------------------/ */
+.button_green{
+    margin-top: 3vh;
+}
+.button_green button{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2em;
+    background: linear-gradient(67deg, rgba(53,137,65,0.9), rgba(76,197,94,1));
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+.button_green .btn_bg{
+    background-color: var(--text-color-white);
+     margin: 0 5px;
+     border-radius: 50%;
+     transition: all .5s;
+    }
+    .button_green .btn_bg i{
+        color: #161616;
+        padding: 10px;
+    }
+    .button_green button:hover .btn_text{
+        order: 2;
+        color: black;
+
+}
+.button_green button:hover .btn_bg{
+    order: 1;
+    background: linear-gradient(67deg, rgba(53,137,65,0.9), rgba(76,197,94,1));
+}
+.button_green button:hover i{
+    color: #fff;
+}
+.button_green button:hover{
+    background: #fff;
+    box-shadow: 2px 2px 10px grey; 
+
+}
+
+/* ---------------------- Button hover css ends --------------- */
+
+.hero_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left_content{
+    width: 50%;
+}
+.right_animation_gif{
+    width: 40%;
+}
+.right_animation_gif img{
+    width: 100%;
+}
+.left_content h1{
+    font-size: 3.5em;
+    margin-bottom: 3vh;
+}
+.left_content p{
+    font-size: 1.2em;
+}
+.green{
+    color: var(--color);
+}
+.grey{
+    color: grey;
+}
+.main_services {
+    /* border: 1px solid; */
+    /* height: 30vh; */
+    /* background-color: #1bbf54; */
+    /* position: relative; */
+    background: #3a9948;
+    margin-bottom: 5vh;
+    margin-top: 150px;
+    position: relative;
+}
+.pblack{
+    color: black;
+}
+.main_services .service_container .services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--text-color-white);
+    /* margin-top: -100px; */
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.416);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin-top: -120px;
+
+}
+.main_services .service_container .services .service_1{
+    background: #e8f1e9;
+    flex-basis: 32%;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.main_services .service_container .services .service_2{
+    background: #dce5f0;
+    flex-basis: 32%;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.416);
+}
+.main_services .service_container .services .service_3{
+    background: #e8f1e9;
+    flex-basis: 32%;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.416);
+}
+
+.service_heading{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* margin-bottom: 10px; */
+   padding:  20px 0;
+}
+.service_heading   .grey_bg{
+    height: 40px;
+    width: 40px;
+    background: grey;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.service_container{
+    width: 80%;
+    margin: auto;
+}
+
+.main_services .trust_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 150px;
+    width: 80%;
+    margin: auto;
+}
+.right_trust{
+    width: 60%;
+    margin-bottom: 30px;
+}
+.right_trust p{
+    font-size: 1.2em;
+    color: #fff;
+}
+.right_trust span{
+    font-size: 1.8em;
+    color: #fff;
+    margin-top: 20px;
+}
+.left_image{
+    width: 30%;
+}
+.left_image .image img{
+    width: 100%;
+}
+.border_center{
+    width: 2px;
+    background: #d8dadb;
+    height: 180px;
+}
+
+/* --------------------------+ Award section css ------------ */
+
+.award_section{
+    padding: 0 5%;
+}
+.award_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+.award_title h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.Google_image{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Google_image img{
+    width: 60px;
+}
+.stars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ---------------- award images css -------------- */
+.awards_pc{
+    display: flex;
+    align-items: stretch; /* Make sure items have equal height */
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5vh;
+    flex-wrap: wrap;
+
+}
+.award_images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(215, 215, 215);
+    padding: 20px;
+    flex-basis: 13%;
+    text-align: center;
+    /* flex-grow: 1; */
+    margin: 10px;
+}
+.award_images div{
+    width: 120px ;
+}
+.award_images div img{
+    width: 100% ;
+    height: auto;
+}
+  
+.projects_heading{
+    text-align: center;
+    padding: 40px;
+}
+.slider_section{
+    background: #e8f1e9;
+}
+
+/* ------------------ image slider css section ------------ */
+.slider_container{
+    width: 90%;
+    border: 1px solid;
+    margin: auto;
+    overflow: hidden;
+}
+.sliders{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    transition: all .5s ease-in-out;
+    /* overflow: hidden; */
+    /* border: 2px solid yellow; */
+}
+.slide_content
+{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.slide{
+    flex: 0 0 100%;
+}
+.slide_image{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slide_text .heading{
+  background: #444;
+   height: 100%;
+    width: 100%; 
+    color: #FFF;
+    /* margin: 10px; */
+    padding: 25px;
+}
+/* here .slide.active are written simultaniously without comma that means that when the both class are there then do that */
+.slide.active {
+    transform: translateX(0);
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 20px;
+}
+.arrow button{
+    padding: 10px;
+    background-color: #1bbf54;
+    border: none;
+    border-radius: 50%;
+}
+.arrow button i{
+    font-size: 1.3em;
+    color: #fff;
+}

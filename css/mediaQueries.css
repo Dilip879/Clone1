@@ -1,0 +1,189 @@
+
+
+/* ----------- Media Query for 1150px ----------------------- */
+@media screen and (max-width: 1150px) {
+   .btn_and_whatsapp .slider_animation{
+    display: none;
+  }
+  .award_images{
+    flex-grow: 2;
+}
+}
+
+/* ------------------ Media Query for 1000px -------------- */
+
+@media screen and (max-width: 1000px) {
+    .header_bar{
+        position: relative;
+    }
+    .nav_bar{
+        position: absolute;
+        top: 105%;
+        background-color: var(--text-color-white);
+        /* text-align: center; */
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin: auto;
+        right: -250%;
+        transition: 1s;
+    }
+    .nav_bar ul li{
+        display: block;
+        padding: 20px;
+    }
+    .nav_bar ul li:hover{
+        background-color: #ddd;
+        color: #3a9948;
+    }
+    .nav_bar ul li:hover a{
+        color: #3a9948;
+        font-weight: bold;
+    }
+    .menu_icon{
+        display: block !important;
+    }
+    .fa-xmark{
+        display: none;
+    }
+    .hero_container{
+        flex-direction: column;
+    }
+    .left_content{
+        width: 90% !important;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .right_animation_gif{
+        width: 90% !important;
+    }
+    .services{
+      flex-direction: column;
+      
+    }
+    .main_services {
+     margin-top: 500px !important;
+  }
+  .main_services .service_container .services{
+
+    margin-top: -420px !important;
+
+}
+.main_services .trust_flex{
+    flex-direction: column;
+    padding-top: 200px !important;
+    padding-bottom: 20px;
+
+}
+.border_center{
+  display: none;
+}
+.right_trust{
+  width: 100% !important;
+  padding: 10px;
+}
+.left_image{
+  width: 60% !important;
+  margin-top: 20px;
+}
+}
+/* ---------------- Media Query for 950px -------- */
+
+@media screen and (max-width: 950px) {
+    .top_Content{
+        display: none;
+    }
+}
+
+
+/* ---------------- Media Query for 850px -------- */
+
+@media screen and (max-width: 850px) {
+    .award_rating{
+        display: none !important;
+      }
+    .award_head{
+      width: 100%;
+    }
+    .slide_content{
+  flex-direction: column !important;
+  }
+
+  .slide_image img{
+    width: 80% !important;
+  }
+}
+
+
+/* ---------------- Media Query for 650px -------- */
+
+@media screen and (max-width: 650px) {
+  .main_services .service_container .services{
+    width: 100% !important;
+}
+}
+
+
+
+/* -----------Media Query For 600px ----------- */
+@media screen and (max-width: 600px) {
+      .call_icon{
+        display: none;
+      }
+      .left_content h1{
+        font-size: 2.5em !important;
+    }
+    .left_content p{
+        font-size: 1em !important;
+    }
+}
+
+/* -----------Media Query for 520px ------------ */
+
+
+@media screen and (max-width: 520px) {
+      .top_bar .contact .one{
+        display: none;
+      }
+      .top_bar{
+        justify-content: space-between !important;
+        padding:  0 2% !important;
+      }
+      .top_bar .contact p{
+        font-size: 14px;
+      }
+      .nav_bar{
+        width: 100%;
+      }
+      .contact_btn{
+        display: none;
+      }
+      .menu_icon{
+        margin-right: 0px !important;
+      }
+      .main_services .trust_flex{
+      padding-top: 20px !important;
+    }
+    .main_services .service_container .services{
+      margin-top: -650px !important;
+  }
+  .award_title h1{
+    font-size: 2em !important;
+}
+
+}
+
+/* -----------Media Query For 470px ----------- */
+@media screen and (max-width: 470px) {
+  .main_services .service_container .services{
+    margin-top: -680px !important;
+}
+}
+
+/* -----------Media Query For 370px ----------- */
+@media screen and (max-width: 370px) {
+  .main_services .service_container .services{
+    margin-top: -750px !important;
+}
+}
